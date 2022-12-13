@@ -1,0 +1,94 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Avalonia.UI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="450"
+        WindowStartupLocation="CenterScreen" 
+        x:Class="Avalonia.UI.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="{Binding Title}">
+       
+    
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+    
+    <Grid Background="{Binding Color}">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"> </RowDefinition>
+                <RowDefinition Height="50"> </RowDefinition>
+            <RowDefinition Height="50"> </RowDefinition>
+            <RowDefinition Height="50"> </RowDefinition>
+            <RowDefinition Height="50"> </RowDefinition>
+            <RowDefinition> </RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Image Grid.Column="0" Grid.Row="0" Margin="10,60,20,20" Width="150" Height="150" Source="/Assets/fbi.png">
+        </Image>
+        
+             <StackPanel Grid.Row="0" Grid.Column="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="500"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label  FontFamily="Impact"  FontStyle="25" Grid.Row="0" Grid.Column="0" Margin="1,1,1, 1" FontSize="50" Content="{Binding Title}"></Label>
+            </Grid>
+        </StackPanel>
+        <Label  FontFamily="Impact"  FontStyle="25" Grid.Row="4" Grid.Column="0" Margin="1,1,1, 1" FontSize="25" Content="Разделы"></Label>
+        <StackPanel Grid.Row="5" Grid.Column="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition > </RowDefinition>
+                    <RowDefinition > </RowDefinition>
+                    <RowDefinition > </RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <Button HorizontalAlignment="Left" Click="MostWanted" FontFamily="Impact" FontSize="15" Margin="10,0,0,0" Grid.Row="0" Grid.Column="0" Content="Самые разыскиваемые" ></Button>
+                <!--  <Button HorizontalAlignment="Left" Click="Statistic" FontFamily="Impact" FontStyle="25" Margin="15,0,0,0" Grid.Row="0" Grid.Column="0" Content="Статистика преступлений" ></Button>
+                <Button HorizontalAlignment="Left" Click="Notes" FontFamily="Impact" FontStyle="25" Margin="15,0,0,0" Grid.Row="0" Grid.Column="0" Content="Пропавшие без вести"></Button> -->
+            </Grid>
+        </StackPanel>
+        
+        
+        <ScrollViewer Grid.Column="3" Grid.Row="2" >
+        <DataGrid Name="DataGrid" x:Name="DataInput"  IsVisible="False" IsReadOnly="True"  >
+            <DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                    <TextBlock  HorizontalAlignment="Center" Margin="10,10,10,10" FontFamily="Times New Roman" FontSize="12"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
+        </DataGrid>
+        </ScrollViewer>
+       
+        
+      
+        <!--<TextBlock 
+                    FontSize="30"
+                    FontFamily="Impact "
+                    Margin="20, 150,20,20"
+                    HorizontalAlignment="Left"
+                    TextAlignment="Right"
+                    FontStyle="Normal"
+                    Text="Разделы" />
+                <Label Content="Что расследуем?" HorizontalAlignment="Right"
+                       Margin="100, 460,40,20"   FontFamily="Impact "  FontSize="20"/>
+                <Button Content="Самые pазыскиваемые" HorizontalAlignment="Center" Margin="10, 10 ,220,200" Command="{Binding Command1 }"/>
+                <Button Content="Статистика преступлений" HorizontalAlignment="Center" Margin="10, 10 ,200,100" Command="{Binding Command2 }"/>
+                <Button Content="Пропавшие без вести" HorizontalAlignment="Center" Margin="10, 10 ,230,1" Command="{Binding Command3 }"/>
+                <Button Content="Читать дальше" HorizontalAlignment="Right" Margin="10, 350 ,40,1" Command="{Binding Command4}"/>-->
+        
+ 
+    </Grid>
+</Window>

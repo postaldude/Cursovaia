@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Avalonia.UI/App.axaml" value="Avalonia.UI/Avalonia.UI.csproj" />
+        <entry key="Avalonia.UI/Views/Crime.axaml" value="Avalonia.UI/Avalonia.UI.csproj" />
+        <entry key="Avalonia.UI/Views/InformationCriminals.axaml" value="Avalonia.UI/Avalonia.UI.csproj" />
+        <entry key="Avalonia.UI/Views/MainWindow.axaml" value="Avalonia.UI/Avalonia.UI.csproj" />
+        <entry key="Avalonia.UI/Views/MostWanted.axaml" value="Avalonia.UI/Avalonia.UI.csproj" />
+        <entry key="Avalonia.UI/Views/NewVid.axaml" value="Avalonia.UI/Avalonia.UI.csproj" />
+        <entry key="Avalonia.UI/Views/NewView.axaml" value="Avalonia.UI/Avalonia.UI.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
