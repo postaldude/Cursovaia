@@ -33,7 +33,7 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         
-        <Image Grid.Column="0" Grid.Row="0" Margin="10,60,20,20" Width="150" Height="150" Source="/Assets/fbi.png">
+        <Image Grid.Column="0" Grid.Row="0" Margin="10,60,20,20" Width="150" Height="150" Source="/Assets/pngegg.png">
         </Image>
         
              <StackPanel Grid.Row="0" Grid.Column="1">
@@ -53,7 +53,10 @@
                     <RowDefinition > </RowDefinition>
                 </Grid.RowDefinitions>
                 
-                <Button HorizontalAlignment="Left" Click="MostWanted" FontFamily="Impact" FontSize="15" Margin="10,0,0,0" Grid.Row="0" Grid.Column="0" Content="Самые разыскиваемые" ></Button>
+                <Rectangle Fill="{Binding Color2}" Height="300" Width="180" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" />
+                <Button HorizontalAlignment="Left" VerticalAlignment="Top" Click="Delivery" FontFamily="Impact" FontSize="15" Margin="10,10,0,0" Grid.Row="0" Grid.Column="0" Content="Службы доставки" ></Button>
+                <Button HorizontalAlignment="Left" VerticalAlignment="Top" Click="Delivery" FontFamily="Impact" FontSize="15" Margin="10,60,0,0" Grid.Row="0" Grid.Column="0" Content="Трек доставки" ></Button>
+
                 <!--  <Button HorizontalAlignment="Left" Click="Statistic" FontFamily="Impact" FontStyle="25" Margin="15,0,0,0" Grid.Row="0" Grid.Column="0" Content="Статистика преступлений" ></Button>
                 <Button HorizontalAlignment="Left" Click="Notes" FontFamily="Impact" FontStyle="25" Margin="15,0,0,0" Grid.Row="0" Grid.Column="0" Content="Пропавшие без вести"></Button> -->
             </Grid>

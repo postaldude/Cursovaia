@@ -23,8 +23,8 @@ namespace Avalonia.UI.Views
         {
             InitializeComponent();
             
-            string link = "https://api.fbi.gov/wanted/v1/list";
-            Api(link);
+           // string link = "https://api.fbi.gov/wanted/v1/list";
+            // Api(link);
 
             //Окно не открывается
            // this.WhenActivated(d => d(ViewModel!.ShowDialog.RegisterHandler(DoShowDialogAsync)));
@@ -70,7 +70,7 @@ namespace Avalonia.UI.Views
         }
        
        
-        private void MostWanted(object? sender, RoutedEventArgs e)
+        private void Delivery(object? sender, RoutedEventArgs e)
         {
             string link = "https://api.fbi.gov/wanted/v1/list";
             

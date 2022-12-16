@@ -16,7 +16,8 @@ namespace Avalonia.UI.ViewModels
     public class MainWindowViewModel : ViewModelBase
     {
         public string Color => "#263740";
-        public string Title => "Разыскиваются ФБР";
+        public string Color2 => "#386370";
+        public string Title => "Где Посылка";
         
         
         //Окно не открывается
